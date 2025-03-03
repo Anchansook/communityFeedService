@@ -24,4 +24,6 @@ public class User {
 	public int hashCode() {
 		return Objects.hashCode(id);
 	}
+
+	// 잠시 확인용 다음 공부 때 지워~
 }
