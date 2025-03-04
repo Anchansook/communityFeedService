@@ -19,6 +19,27 @@ public class User {
 	// 팔로우
 	public void follow(User targetUser) {
 		if (targetUser.equals(this)) throw new IllegalArgumentException();
+
+		followingCounter.increase();
+		targetUser.increaseFollowerCount();
+	}
+
+	// 언팔로우
+	public void unfollow(User targetUser) {
+		if (this.equals(targetUser)) throw new IllegalArgumentException();
+
+		followingCounter.decrease();
+		targetUser.decreaseFollowerCount();
+	}
+
+	// targetUser.followerCounter.increase(); 
+	// .점을 타고타고 가는 것을 줄이기 위한
+	private void increaseFollowerCount() {
+		followerCounter.increase();
+	}
+
+	private void decreaseFollowerCount() {
+		followerCounter.decrease();
 	}
 
 	@Override
