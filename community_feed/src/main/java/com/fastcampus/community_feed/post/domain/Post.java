@@ -1,5 +1,6 @@
 package com.fastcampus.community_feed.post.domain;
 
+import com.fastcampus.community_feed.post.domain.content.PostContent;
 import com.fastcampus.community_feed.user.domain.User;
 
 //% 게시글 
