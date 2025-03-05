@@ -2,18 +2,20 @@ package com.fastcampus.community_feed.user.domain;
 
 import java.util.Objects;
 
+import com.fastcampus.community_feed.post.domain.comment.PositivelntegerCounter;
+
 public class User {
 	private final Long id;
 	private final UserInfo userInfo;
-	private final UserRelationCounter followingCounter;
-	private final UserRelationCounter followerCounter;
+	private final PositivelntegerCounter followingCounter;
+	private final PositivelntegerCounter followerCounter;
 
 	public User(Long id, UserInfo userInfo) {
 		this.id = id;
 		this.userInfo = userInfo;
 		// 각각으로 사용을 해야하기 때문에 새 객체를 생성하여 설정
-		this.followingCounter = new UserRelationCounter();
-		this.followerCounter = new UserRelationCounter();
+		this.followingCounter = new PositivelntegerCounter();
+		this.followerCounter = new PositivelntegerCounter();
 	}
 
 	// 팔로우
