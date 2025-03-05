@@ -13,7 +13,7 @@ public class Post {
 	private final PostContent content;
 	private final PositivelntegerCounter likeCount;
 
-	// 생성자자
+	// 생성자
 	public Post(Long id, User author, PostContent content) {
 		// 작성자가 없다면 에러 
 		if (author == null) throw new IllegalArgumentException();

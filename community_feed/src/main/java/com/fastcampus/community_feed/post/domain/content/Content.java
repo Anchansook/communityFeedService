@@ -23,6 +23,7 @@ public abstract class Content {
 		this.datetimeInfo.updateEditDatetime();
 	}
 
+	// 내용 확인하는 추상화 메서드 (다른 곳에서 다양하게 사용하기 위한)
 	protected abstract void checkText(String contentText);
 
 	// getter
