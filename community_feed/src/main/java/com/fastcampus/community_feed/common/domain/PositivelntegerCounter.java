@@ -1,6 +1,6 @@
-package com.fastcampus.community_feed.post.domain.comment;
+package com.fastcampus.community_feed.common.domain;
 
-//% 팔로우, 좋아요 수 증가 공통 사용
+//% 팔로우, 좋아요 수 카운트 공통 사용
 
 public class PositivelntegerCounter {
 

@@ -2,7 +2,7 @@ package com.fastcampus.community_feed.user.domain;
 
 import java.util.Objects;
 
-import com.fastcampus.community_feed.post.domain.comment.PositivelntegerCounter;
+import com.fastcampus.community_feed.common.domain.PositivelntegerCounter;
 
 public class User {
 	private final Long id;
