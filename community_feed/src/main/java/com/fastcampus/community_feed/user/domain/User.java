@@ -6,9 +6,9 @@ import com.fastcampus.community_feed.common.domain.PositivelntegerCounter;
 
 public class User {
 	private final Long id;
-	private final UserInfo userInfo;
-	private final PositivelntegerCounter followingCounter;
-	private final PositivelntegerCounter followerCounter;
+	private final UserInfo userInfo; //&객체 테스트
+	private final PositivelntegerCounter followingCounter; //& 객체 테스트
+	private final PositivelntegerCounter followerCounter; //& 객체 테스트
 
 	public User(Long id, UserInfo userInfo) {
 		this.id = id;

@@ -19,5 +19,10 @@ public class PositivelntegerCounter {
 
 		this.count--;
 	}
+
+	// getter
+	public int getCount() {
+		return count;
+	}
 	
 }
