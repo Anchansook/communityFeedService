@@ -6,11 +6,13 @@ import com.fastcampus.community_feed.common.domain.PositivelntegerCounter;
 
 public class User {
 	private final Long id;
-	private final UserInfo userInfo; //&객체 테스트
+	private final UserInfo userInfo; //& 객체 테스트
 	private final PositivelntegerCounter followingCounter; //& 객체 테스트
 	private final PositivelntegerCounter followerCounter; //& 객체 테스트
 
 	public User(Long id, UserInfo userInfo) {
+		if (userInfo == null) throw new IllegalArgumentException();
+
 		this.id = id;
 		this.userInfo = userInfo;
 		// 각각으로 사용을 해야하기 때문에 새 객체를 생성하여 설정
